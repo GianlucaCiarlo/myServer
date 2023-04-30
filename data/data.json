@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Pepsi 2,25L",
+    "description": "Gaseosa sabor Cola 2,25L x 8u.",
+    "price": 3000,
+    "thumbnail": "sin IMG",
+    "code": "pep225",
+    "stock": 10,
+    "id": 1
+  },
+  {
+    "title": "Mirinda 2,25L",
+    "description": "Gaseosa sabor Naranja 2,25L x 8u",
+    "price": 3000,
+    "thumbnail": "sin IMG",
+    "code": "mir225",
+    "stock": 10,
+    "id": 2
+  },
+  {
+    "title": "7up 2,25L",
+    "description": "Gaseosa sabor lima 2,25L x 8u",
+    "price": 3000,
+    "thumbnail": "sin IMG",
+    "code": "sev225",
+    "stock": 10,
+    "id": 3
+  },
+  {
+    "title": "Estancia Tinto",
+    "description": "Vino tinto malbec x 6u",
+    "price": 2500,
+    "thumbnail": "sin IMG",
+    "code": "estMALB6",
+    "stock": 10,
+    "id": 4
+  },
+  {
+    "title": "Estancia Blanco",
+    "description": "Vino blanco chardonnay x 6u",
+    "price": 2500,
+    "thumbnail": "sin IMG",
+    "code": "estCHARD6",
+    "stock": 10,
+    "id": 5
+  },
+  {
+    "title": "Pepsi 2L retornable",
+    "description": "Gaseosa sabor cola 2L retornable x 10u",
+    "price": 2500,
+    "thumbnail": "sin IMG",
+    "code": "Pep2lr",
+    "stock": 10,
+    "id": 6
+  },
+  {
+    "title": "Mirinda naranja 2l Retornable",
+    "description": "Gaseosa sabor naranja 2l retornable x 10u",
+    "price": 2500,
+    "thumbnail": "sin IMG",
+    "code": "Mir2lr",
+    "stock": 10,
+    "id": 7
+  },
+  {
+    "title": "7up 2L retornable",
+    "description": "Gaseosa sabor lima 2L retornable x 10u",
+    "price": 2500,
+    "thumbnail": "sin IMG",
+    "code": "Sev2lr",
+    "stock": 10,
+    "id": 8
+  },
+  {
+    "title": "Champagne la llave 750ml",
+    "description": "Champagne extra brut 750ml x 6u",
+    "price": 9500,
+    "thumbnail": "sin IMG",
+    "code": "Champllav750",
+    "stock": 10,
+    "id": 9
+  },
+  {
+    "title": "Sidra 1988",
+    "description": "Sidra de manzana 1988 x 6u",
+    "price": 2500,
+    "thumbnail": "sin IMG",
+    "code": "Sid1988",
+    "stock": 10,
+    "id": 10
+  }
+]
