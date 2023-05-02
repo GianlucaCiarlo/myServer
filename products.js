@@ -32,8 +32,8 @@ class ProductManager {
       let data_json = JSON.stringify(this.products, null, 2);
 
       await fs.promises.writeFile(this.path, data_json);
-      console.log("ID del producto: " + data.id);
-      return "ID del producto: " + data.id;
+    
+      return data;
     } catch (error) {
       console.log(error);
       return "error: creando producto";
