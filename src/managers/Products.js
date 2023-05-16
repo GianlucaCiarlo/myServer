@@ -1,4 +1,26 @@
+import { Router } from "express";
+
+const product_router = Router();
+const products = [];
+
+product_router.get('/', (req,res) => {
+  res.send({products})
+})
+
+product_router.post('/', (req, res) => {
+  const product = req.body;
+  products.push(product)
+  res.send({
+    status: "success",
+    products
+  })
+})
+
+
+
+
 import fs from 'fs'
+
 
 class ProductManager {
   constructor(path) {
@@ -98,7 +120,7 @@ class ProductManager {
     }
   }
 
-  async delateProduct(id) {
+  async deleteProduct(id) {
     try {
       let first = this.read_product(id);
       if (!first) {
@@ -107,16 +129,16 @@ class ProductManager {
       this.products = this.products.filter((each) => each.id !== id);
       let data_json = JSON.stringify(this.products, null, 2);
       await fs.promises.writeFile(this.path, data_json);
-      console.log("Producto borrado: " + id);
+      
       return "Producto borrado: " + id;
     } catch (error) {
-      console.log(error);
+      
       return "Error: Borrando Producto";
     }
   }
 }
 
-let manager = new ProductManager("./data/data.json");
+let manager = new ProductManager("./src/data/productos.json");
 
 async function manage() {
   await manager.addProduct({
@@ -202,7 +224,7 @@ async function manage() {
 }
 
 
-export default manager 
+export default manager
 
 
 
