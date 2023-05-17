@@ -215,10 +215,10 @@ async function manage() {
   });
   await manager.addProduct({
     title: "Sidra 1988",
-    description: "Sidra de manzana 1988 x 6u",
+    description: "Sidra de manzana 1888 x 6u",
     price: 2500,
     thumbnail: "sin IMG",
-    code: "Sid1988",
+    code: "Sid1888",
     stock: 10,
   });
 }

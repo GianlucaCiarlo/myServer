@@ -1,0 +1,16 @@
+
+<h1 class="text-center text-bg-danger">Productos</h1>
+
+<div class="d-flex justify-content-evenly">
+{{#each productos}}
+  <div class="card" style="width: 15rem;">
+    <img src={{this.thumbnail}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{this.title}}</h5>
+      <p class="card-text">{{this.description}} </p>
+      <p>{{this.price}} </p>
+      <a href="#" id="emit_buy" class= "btn btn-primary">Comprar</a>
+    </div>
+    </div>
+{{/each}}
+</div>

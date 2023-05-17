@@ -1,16 +1,19 @@
-import express from "express";
-import router from "./routes/index_router.js";
-
+import server from "./app.js";
+import { Server } from "socket.io";
 let PORT = 8080;
-let server = express();
-
-
-
 let ready = () => console.log("Server ready on port: " + PORT);
-server.listen(PORT, ready);
-server.use(express.json());
-server.use(express.urlencoded({ extended: true }));
-server.use('/',router)
 
+let http_server = server.listen(PORT, ready); 
+let socket_server = new Server(http_server)  
+
+socket_server.on( 
+    'connection',  
+    socket => {     
+        
+        console.log(`client ${socket.client.id} connected`)
+
+    }
+
+)
 
 
